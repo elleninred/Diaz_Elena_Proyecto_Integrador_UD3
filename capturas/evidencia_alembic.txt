@@ -1,0 +1,23 @@
+$ alembic history
+0001 -> 0002 (head), Añade observaciones a libros
+<base> -> 0001, Crea esquema inicial de la biblioteca
+
+$ alembic downgrade base  (partimos de BD vacia)
+INFO  [alembic.runtime.migration] Running downgrade 0002 -> 0001, Añade observaciones a libros
+INFO  [alembic.runtime.migration] Running downgrade 0001 -> , Crea esquema inicial de la biblioteca
+
+$ alembic upgrade head
+INFO  [alembic.runtime.migration] Running upgrade  -> 0001, Crea esquema inicial de la biblioteca
+INFO  [alembic.runtime.migration] Running upgrade 0001 -> 0002, Añade observaciones a libros
+columna observaciones existe: 1
+
+$ alembic downgrade -1
+INFO  [alembic.runtime.migration] Running downgrade 0002 -> 0001, Añade observaciones a libros
+columna observaciones existe: 0
+
+$ alembic upgrade head
+INFO  [alembic.runtime.migration] Running upgrade 0001 -> 0002, Añade observaciones a libros
+columna observaciones existe: 1
+
+$ alembic current
+0002 (head)
