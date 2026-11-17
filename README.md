@@ -1,6 +1,6 @@
 # Proyecto Integrador UD3: Biblioteca ORM Completa
 
-Aplicación de consola en Python para la gestión integral de una biblioteca mediante arquitectura por capas, SQLAlchemy 2.x, PostgreSQL, Alembic y pytest.
+Aplicación de consola en Python para la gestión integral de una biblioteca mediante arquitectura por capas, SQLAlchemy 2.0, PostgreSQL, Alembic y pytest.
 
 ## Integrantes y reparto de tareas
 - **Integrante 1 (Modelos y repositorios):** Entidades ORM (`Autor`, `Libro`, `Socio`, `Ejemplar`, `Prestamo`), relaciones `1:N` y `N:M`, consultas dinámicas paginadas y optimización N+1 (`joinedload` / `selectinload`).
