@@ -1,0 +1,3 @@
+[N+1] Autores con sus libros: antes = 6 consultas | después = 2 consultas
+[N+1] Libros con su autor: antes = 6 consultas | después = 1 consultas
+[N+1] Préstamos con socio y ejemplares: antes = 11 consultas | después = 2 consultas
