@@ -115,3 +115,5 @@ biblioteca_orm/
 - No se controla la concurrencia: dos usuarios podrían prestar el mismo ejemplar a la vez (haría falta `SELECT ... FOR UPDATE`).
 - Las pruebas de integración necesitan una instancia de PostgreSQL con la base `biblioteca_test`.
 - La búsqueda por título usa `ILIKE '%texto%'`, que no aprovecha índices.
+
+**GIT REPO: https://github.com/elleninred/Diaz_Elena_Proyecto_Integrador_UD3**
