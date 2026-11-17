@@ -22,6 +22,7 @@ class Libro(Base):
     precio: Mapped[Decimal] = mapped_column(Numeric(10, 2))
     id_autor: Mapped[int] = mapped_column(ForeignKey("autores.id_autor"))
     activo: Mapped[bool] = mapped_column(Boolean, default=True)
+    observaciones: Mapped[str | None] = mapped_column(String(500), nullable=True)
 
     autor: Mapped["Autor"] = relationship(back_populates="libros")
     ejemplares: Mapped[list["Ejemplar"]] = relationship(back_populates="libro")

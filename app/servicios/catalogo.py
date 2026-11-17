@@ -59,6 +59,7 @@ class CatalogoServicio:
                 precio=datos.precio,
                 id_autor=datos.id_autor,
                 activo=True,
+                observaciones=datos.observaciones,
             )
             uow.libros.añadir(libro)
             uow.flush()

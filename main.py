@@ -93,12 +93,14 @@ def main() -> None:
                 titulo = input("Título: ").strip()
                 precio = leer_decimal("Precio: ")
                 id_autor = leer_entero("ID del autor: ")
+                obs = input("Observaciones (opcional): ").strip() or None
                 id_creado = catalogo_srv.crear_libro(
                     DatosLibro(
                         isbn=isbn,
                         titulo=titulo,
                         precio=precio,
                         id_autor=id_autor,
+                        observaciones=obs,
                     )
                 )
                 print(f"Libro creado correctamente con ID {id_creado}.")

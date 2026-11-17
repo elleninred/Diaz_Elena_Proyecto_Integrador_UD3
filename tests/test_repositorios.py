@@ -16,6 +16,7 @@ def test_integracion_insertar_y_recuperar_libro(uow_integracion, datos_base_inte
             titulo="El amor en los tiempos del cólera",
             precio=Decimal("18.50"),
             id_autor=datos_base_integracion["id_autor"],
+            observaciones="Edición bolsillo",
         )
     )
     recuperado = srv.buscar_libro(id_nuevo)

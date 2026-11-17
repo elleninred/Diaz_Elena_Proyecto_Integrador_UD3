@@ -8,6 +8,7 @@ class DatosLibro:
     titulo: str
     precio: Decimal
     id_autor: int
+    observaciones: str | None = None
 
 
 @dataclass(frozen=True)
