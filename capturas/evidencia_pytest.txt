@@ -1,0 +1,17 @@
+tests/test_catalogo_servicio.py::test_rechaza_precio_negativo_al_cambiar[precio_invalido0] PASSED
+tests/test_catalogo_servicio.py::test_rechaza_precio_negativo_al_cambiar[precio_invalido1] PASSED
+tests/test_catalogo_servicio.py::test_no_crea_libro_si_autor_no_existe PASSED
+tests/test_catalogo_servicio.py::test_no_crea_libro_si_isbn_duplicado PASSED
+tests/test_catalogo_servicio.py::test_crea_libro_correctamente PASSED
+tests/test_catalogo_servicio.py::test_desactivar_libro_inexistente_lanza_error PASSED
+tests/test_prestamo_servicio.py::test_rechaza_socio_inactivo PASSED
+tests/test_prestamo_servicio.py::test_rechaza_ejemplar_no_disponible PASSED
+tests/test_prestamo_servicio.py::test_registra_y_devuelve_prestamo_correctamente PASSED
+tests/test_rendimiento.py::test_n_mas_1_autores_con_libros PASSED
+tests/test_rendimiento.py::test_n_mas_1_libros_con_autor PASSED
+tests/test_rendimiento.py::test_n_mas_1_prestamos_con_socio_y_ejemplares PASSED
+tests/test_repositorios.py::test_integracion_insertar_y_recuperar_libro PASSED
+tests/test_repositorios.py::test_integracion_isbn_duplicado PASSED
+tests/test_repositorios.py::test_integracion_registrar_y_devolver_prestamo PASSED
+tests/test_repositorios.py::test_integracion_filtros_y_paginacion PASSED
+============================== 16 passed in 0.30s ==============================
